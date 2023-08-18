@@ -2,9 +2,10 @@ import Link from "next/link";
 import React from "react";
 import Menu from "./Menu";
 import Image from "next/image";
+import CartIcon from "./CartIcon";
 
 const Navbar = () => {
-  const user = false;
+  const user = true;
   return (
     <div className="h-12 text-red-500 p-4 flex items-center justify-between border-b-2 border-b-red-500 uppercase md:h-24 lg:px-20 xl:px-40">
       {/* LEFT LINKS */}
@@ -32,7 +33,7 @@ const Navbar = () => {
         ) : (
           <Link href="/orders">Orders</Link>
         )}
-        {/* <CartIcon /> */}
+        <CartIcon />
       </div>
     </div>
   );
